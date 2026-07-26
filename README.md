@@ -162,4 +162,4 @@ every change) and one `autobackup_YYYY-MM-DD.db` per day automatically.
 
 ## Credits
 
-Developed by **Prasad Mallampati** — 📞 6303140316 · ✉️ prasadmallampati16@gmail.com
+Developed by  Pusuluri Kundana contact mail: kundanasri.07@gmail.com
