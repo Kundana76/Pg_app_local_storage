@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PG Manager</title>
+<link rel="stylesheet" href="/style.css" />
+<script src="/vendor/chart.umd.min.js"></script>
+</head>
+<body>
+<div id="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-logo" id="brandInitial">PG</div>
+      <div>
+        <div class="brand-name" id="brandName">My PG</div>
+        <div class="brand-sub">Offline Manager</div>
+      </div>
+    </div>
+
+    <div class="nav-group-label">Overview</div>
+    <div class="nav-item" data-route="dashboard"><span class="nav-icon">📊</span> Dashboard</div>
+
+    <div class="nav-group-label">Property</div>
+    <div class="nav-item" data-route="floors"><span class="nav-icon">🏢</span> Floors</div>
+    <div class="nav-item" data-route="rooms"><span class="nav-icon">🚪</span> Rooms &amp; Beds</div>
+
+    <div class="nav-group-label">People</div>
+    <div class="nav-item" data-route="tenants"><span class="nav-icon">🧑‍🤝‍🧑</span> Tenants</div>
+    <div class="nav-item" data-route="staff"><span class="nav-icon">🛠️</span> Staff</div>
+
+    <div class="nav-group-label">Finance</div>
+    <div class="nav-item" data-route="rent"><span class="nav-icon">💰</span> Rent Collection</div>
+    <div class="nav-item" data-route="income"><span class="nav-icon">📥</span> Income</div>
+    <div class="nav-item" data-route="expenses"><span class="nav-icon">📤</span> Expenses</div>
+    <div class="nav-item" data-route="ledger"><span class="nav-icon">📒</span> Ledger</div>
+
+    <div class="nav-group-label">System</div>
+    <div class="nav-item" data-route="backup"><span class="nav-icon">💾</span> Backup &amp; Restore</div>
+    <div class="nav-item" data-route="settings"><span class="nav-icon">⚙️</span> Settings</div>
+
+    <div class="sidebar-footer">
+      <div class="theme-toggle">
+        <span>Dark mode</span>
+        <label class="switch">
+          <input type="checkbox" id="themeSwitch" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </aside>
+
+  <div class="dev-credit">
+    <div class="dev-credit-label">Developed by</div>
+    <div class="dev-credit-name">Prasad Mallampati</div>
+    <a class="dev-credit-line" href="tel:6303140316">📞 6303140316</a>
+    <a class="dev-credit-line" href="mailto:prasadmallampati16@gmail.com">✉️ prasadmallampati16@gmail.com</a>
+  </div>
+
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+  <main class="main">
+    <div class="topbar">
+      <div class="topbar-left">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <div>
+          <div class="page-title" id="pageTitle">Dashboard</div>
+          <div class="page-sub" id="pageSub">Overview of your property</div>
+        </div>
+      </div>
+      <div class="topbar-actions" id="topbarActions"></div>
+    </div>
+    <div class="content" id="content"></div>
+  </main>
+</div>
+
+<div class="toast-wrap" id="toastWrap"></div>
+<div id="modalRoot"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>
